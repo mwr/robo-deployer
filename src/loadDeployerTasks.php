@@ -1,9 +1,17 @@
 <?php
+/**
+ * @copyright Copyright (c) 2017 Matthias Walter
+ *
+ * @see LICENSE
+ */
 namespace Mwltr\Robo\Deployer;
 
 use Mwltr\Robo\Deployer\Task\DeployerTask;
 use Mwltr\Robo\Deployer\Task\DeployTask;
 
+/**
+ * loadDeployerTasks
+ */
 trait loadDeployerTasks
 {
     /**
