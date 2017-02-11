@@ -1,7 +1,7 @@
 {
     "name": "mwltr/robo-deployer",
     "description": "Robo Tasks for Deployer",
-    "type": "library",
+    "type": "robo-tasks",
     "license": "MIT",
     "authors": [
         {
@@ -9,7 +9,9 @@
             "email": "mat.walter@web.de"
         }
     ],
-    "require": {},
+    "require": {
+        "consolidation/robo": "~1"
+    },
     "autoload": {
         "psr-4": {
             "Mwltr\\Robo\\Deployer\\": "src"

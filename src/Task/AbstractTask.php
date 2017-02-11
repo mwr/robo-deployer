@@ -91,6 +91,46 @@ abstract class AbstractTask extends BaseTask
     }
 
     /**
+     * @return $this
+     */
+    public function quiet()
+    {
+        $this->option('-q');
+
+        return $this;
+    }
+
+    /**
+     * @return $this
+     */
+    public function verbose()
+    {
+        $this->option('-v');
+
+        return $this;
+    }
+
+    /**
+     * @return $this
+     */
+    public function veryVerbose()
+    {
+        $this->option('-vv');
+
+        return $this;
+    }
+
+    /**
+     * @return $this
+     */
+    public function debug()
+    {
+        $this->option('-vvv');
+
+        return $this;
+    }
+
+    /**
      * adds `ansi` option to composer
      *
      * @return $this
