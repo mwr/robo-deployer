@@ -8,13 +8,14 @@
 namespace Mwltr\Robo\Deployer\Task;
 
 use Robo\Common\ExecOneCommand;
+use Robo\Contract\PrintedInterface;
 use Robo\Exception\TaskException;
 use Robo\Task\BaseTask;
 
 /**
  * AbstractTask
  */
-abstract class AbstractTask extends BaseTask
+abstract class AbstractTask extends BaseTask implements PrintedInterface
 {
     use ExecOneCommand;
 
@@ -140,6 +141,11 @@ abstract class AbstractTask extends BaseTask
         $this->ansi = '--ansi';
 
         return $this;
+    }
+
+    public function getPrinted()
+    {
+        return true;
     }
 
 }
