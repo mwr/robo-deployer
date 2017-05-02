@@ -94,6 +94,16 @@ abstract class AbstractTask extends BaseTask implements PrintedInterface
     /**
      * @return $this
      */
+    public function parallel()
+    {
+        $this->option('-p');
+
+        return $this;
+    }
+
+    /**
+     * @return $this
+     */
     public function quiet()
     {
         $this->option('-q');
